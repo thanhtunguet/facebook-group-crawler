@@ -1,7 +1,7 @@
 {
-  "name": "FB Crawler",
-  "short_name": "FB Crawler for TonIu",
-  "description": "FB Crawler for TonIu",
+  "name": "FB Group Crawler",
+  "short_name": "FB Group Crawler for TonIu",
+  "description": "FB Group Crawler for TonIu",
   "version": "1.0.0",
   "manifest_version": 2,
   "permissions": [

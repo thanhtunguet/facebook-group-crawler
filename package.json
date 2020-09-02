@@ -1,7 +1,7 @@
 {
-  "name": "fb-crawler",
+  "name": "facebook-group-crawler",
   "version": "1.0.0",
-  "description": "FB Crawler for TonIu",
+  "description": "FB Group Crawler for TonIu",
   "repository": {
     "url": "https://github.com/thanhtunguet/fb-crawler",
     "type": "git"
