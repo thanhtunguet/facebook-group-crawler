@@ -1,0 +1,93 @@
+{
+  "name": "fb-crawler",
+  "version": "1.0.0",
+  "description": "FB Crawler for TonIu",
+  "repository": {
+    "url": "https://github.com/thanhtunguet/fb-crawler",
+    "type": "git"
+  },
+  "contributors": [
+    {
+      "name": "Thanh Tùng",
+      "email": "ht@thanhtunguet.info",
+      "url": "https://github.com/thanhtunguet"
+    }
+  ],
+  "author": {
+    "name": "Thanh Tùng",
+    "email": "ht@thanhtunguet.info",
+    "url": "https://github.com/thanhtunguet"
+  },
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "watch-js": "cross-env NODE_ENV=development webpack --watch",
+    "build-js": "cross-env NODE_ENV=production webpack",
+    "watch-css": "node-sass-chokidar src/styles/ -o extension/css/ --recursive --watch --output-style compressed --include-path node_modules/",
+    "build-css": "node-sass-chokidar src/styles/ -o extension/css/ --recursive --build --output-style compressed --include-path node_modules/",
+    "start": "run-p watch-js watch-css",
+    "build": "run-s build-css build-js"
+  },
+  "devDependencies": {
+    "@types/bootstrap": "^4.5.0",
+    "@types/chrome": "^0.0.122",
+    "@types/jest": "^26.0.12",
+    "@types/lodash": "^4.14.161",
+    "@types/node": "^14.6.2",
+    "@types/prop-types": "^15.7.3",
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-router-config": "^5.0.1",
+    "@types/react-router-dom": "^5.1.5",
+    "@types/source-map-support": "^0.5.3",
+    "@typescript-eslint/eslint-plugin": "^4.0.1",
+    "@typescript-eslint/parser": "^4.0.1",
+    "awesome-typescript-loader": "^5.2.1",
+    "cross-env": "^7.0.2",
+    "css-loader": "^4.2.2",
+    "eslint": "^7.8.1",
+    "eslint-config-react-app": "^5.2.1",
+    "eslint-plugin-react-hooks": "1.7.0",
+    "i18next-extractor": "^0.4.0",
+    "jest": "^26.4.2",
+    "less": "^3.12.2",
+    "less-loader": "^7.0.0",
+    "node-loader": "^1.0.1",
+    "node-sass": "^4.14.1",
+    "node-sass-chokidar": "^1.5.0",
+    "npm-run-all": "^4.1.5",
+    "react3l-cli": "^0.4.0",
+    "sass-loader": "^10.0.1",
+    "source-map-support": "^0.5.19",
+    "style-loader": "^1.2.1",
+    "ts-jest": "^26.3.0",
+    "ts-loader": "^8.0.3",
+    "typescript": "^4.0.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-source-map-support": "^2.0.1"
+  },
+  "dependencies": {
+    "antd": "^4.6.2",
+    "axios": "^0.20.0",
+    "bootstrap": "^4.5.2",
+    "i18next": "^19.7.0",
+    "lodash": "^4.17.20",
+    "moment": "^2.27.0",
+    "object-assign": "^4.1.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-i18next": "^11.7.2",
+    "react-router-config": "^5.1.1",
+    "react-router-dom": "^5.2.0",
+    "react3l": "^4.0.0-test-rc45",
+    "react3l-axios-observable": "^1.1.3",
+    "reactn": "^2.2.7",
+    "reactn-devtools": "^1.1.0",
+    "redux": "^4.0.5",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^6.6.2",
+    "xlsx": "^0.16.6"
+  }
+}

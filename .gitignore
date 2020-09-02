@@ -1,0 +1,5 @@
+dist/
+extension/css/
+extension/js/
+node_modules/
+release/
